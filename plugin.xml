@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.graphiti.ui.diagramTypes">
+      <diagramType
+            description="Use this model type to create models conforming to the Resource-Event-Agent (REA) ontology."
+            id="ca.uqam.latece.reamodeler.READiagramType"
+            name="REA Model Type"
+            type="REA Model">
+      </diagramType>
+   </extension>
+   <extension
+         point="org.eclipse.graphiti.ui.diagramTypeProviders">
+      <diagramTypeProvider
+            class="ca.uqam.latece.reamodeler.READiagramTypeProvider"
+            description="Model editor for the REA Ontology."
+            id="ca.uqam.latece.reamodeler.READiagramTypeProvider"
+            name="REA Editor">
+         <diagramType
+               id="ca.uqam.latece.reamodeler.READiagramType">
+         </diagramType>
+         <imageProvider
+               id="ca.uqam.latece.reamodeler.REAImageProvider">
+         </imageProvider>
+      </diagramTypeProvider>
+   </extension>
+   <extension
+         point="org.eclipse.graphiti.ui.imageProviders">
+      <imageProvider
+            class="ca.uqam.latece.reamodeler.REAImageProvider"
+            id="ca.uqam.latece.reamodeler.REAImageProvider">
+      </imageProvider>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="REAModeler">
+         <property
+               name="appName"
+               value="REAModeler">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

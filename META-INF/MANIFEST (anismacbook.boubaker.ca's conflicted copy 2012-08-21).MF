@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Rea Modeler
+Bundle-SymbolicName: ca.uqam.latece.reamodeler;singleton:=true
+Bundle-Version: 0.1
+Bundle-Activator: ca.uqam.latece.reamodeler.Activator
+Bundle-Vendor: Anis Boubaker
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.graphiti;bundle-version="0.9.0",
+ org.eclipse.graphiti.ui;bundle-version="0.9.0",
+ org.eclipse.graphiti.examples.common;bundle-version="0.9.0",
+ org.eclipse.core.resources;bundle-version="3.7.101",
+ org.eclipse.ui.views.properties.tabbed;bundle-version="3.5.200",
+ REA;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
