@@ -44,5 +44,13 @@
          </property>
       </product>
    </extension>
+   <extension
+         point="org.eclipse.emf.ecore.generated_package">
+      <package
+            class="rea.ReaPackage"
+            genModel="model/REA.genmodel"
+            uri="ca.uqam.latece.rea">
+      </package>
+   </extension>
 
 </plugin>
