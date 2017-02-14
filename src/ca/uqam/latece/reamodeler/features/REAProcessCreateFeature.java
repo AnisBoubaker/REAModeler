@@ -1,6 +1,5 @@
 package ca.uqam.latece.reamodeler.features;
 
-import org.eclipse.graphiti.examples.common.ExampleUtil;
 import org.eclipse.graphiti.features.ICreateFeature;
 import org.eclipse.graphiti.features.IFeatureProvider;
 import org.eclipse.graphiti.features.context.IContext;
